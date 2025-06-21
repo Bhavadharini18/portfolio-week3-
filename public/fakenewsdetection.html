@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake News Detection</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container {
+      background-color: white;
+      padding: 30px;
+      width:90% ;
+      max-width: 900px;
+      border-radius: 12px;
+      display: grid;
+      gap: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .project-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: rgb(58, 56, 56);
+      border-bottom: 2px solid rgb(75, 73, 73);
+      padding-bottom: 10px;
+    }
+
+    .project-section {
+      font-size: 15px;
+      color: gray;
+    }
+
+    .section-heading {
+      font-weight: bold;
+      color: rgb(22, 22, 39);
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="project-title">Fake News Detection</div>
+    <div class="project-section">
+      <p>
+        In this project, I built a system to identify and classify fake news articles using <strong>Python</strong> and <strong>MySQL</strong>. The project involved collecting news data and storing it in a MySQL database for efficient access and management. Natural Language Processing (NLP) techniques were applied to clean and process the text data, preparing it for model training.
+      </p>
+      <div class="section-heading">Technical Overview:</div>
+      <ul>
+        <li><strong>Languages & Tools:</strong> Python, MySQL, Pandas, Scikit-learn, NLTK</li>
+        <li><strong>ML Algorithms:</strong> Logistic Regression, Naïve Bayes</li>
+        <li><strong>Features:</strong> Text preprocessing (stopword removal, stemming), TF-IDF vectorization, model evaluation, database integration</li>
+      </ul>
+      <div class="section-heading">Key Features:</div>
+      <ul>
+        <li>Detects fake vs. real news using machine learning techniques</li>
+        <li>Applies NLP methods for efficient text data processing</li>
+        <li>Trains models using labeled datasets to improve accuracy</li>
+        <li>Uses MySQL to store and retrieve news data reliably</li>
+      </ul>
+      <div class="section-heading">Impact:</div>
+      <p>
+        The system achieved reliable accuracy in detecting fake news articles and demonstrated the practical importance of merging machine learning with database systems to combat misinformation effectively.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
