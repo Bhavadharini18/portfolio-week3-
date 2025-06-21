@@ -1,0 +1,199 @@
+body{
+    background-color: rgb(181, 205, 222) ;
+    margin: 10px;
+    padding: 20px;
+
+}
+.firsttop {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.topone{
+    font-weight: bold;
+
+}
+#navi{
+  font-size: 25px;
+  background-color: rgb(250, 249, 249);
+  box-shadow:rgb(173, 173, 172);
+  color:black
+
+}
+#navi:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.03);
+  transform: translateY(-10px) scale(1.02);
+
+}
+.left-text{
+    animation-name:slideinleft;
+    animation-duration: 1s ;
+    animation-timing-function:ease-out;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideinleft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.left-text{
+    padding-top:150px;
+    margin: 10px;
+    padding-left:200px;
+    float: right;
+    left: 30px;
+    font-size: 150px;
+    font-weight: bolder;
+
+}
+
+.profile-pic img {
+    animation: slideFromTop 1s ease-out forwards;
+    width: 400px;
+    border-radius: 50%;
+    height:500px;
+    float:left;
+    padding-top: 50px;
+    box-shadow:rgb(18, 18, 0);
+    transform: translateY(-50px);
+    transition: box-shadow 0.3s ease;
+
+}
+@keyframes slideFromTop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.aboutme{
+    width:100%;
+    height:100vh;
+    margin-top:20px;
+}
+.boxes{
+    width:50%;
+    height:50%;
+    border-radius: 50%;
+    background-color: black;
+}
+#circles{
+    padding:20px;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-left:25%;
+}
+
+.image-text {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgb(215, 212, 212);
+}
+
+.link {
+  text-decoration: none;
+}
+#para-text{
+    color: black;
+    font-size: 20px;
+    font-weight:700;
+}
+
+.skills {
+  padding: 60px 0;
+  background-color: rgb(254, 250, 250);
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.single-skill-content {
+  margin-bottom: 30px;
+}
+.barWrapper {
+  margin-bottom: 25px;
+}
+
+.progressText {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+.single-progress-txt .progress {
+  height: 1rem;
+  background-color: #e9ecef;
+  border-radius: 0.375rem;
+  box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.single-progress-txt .progress-bar {
+  background-color:rgb(209, 86, 209);
+  color: #fff;
+  transition: width 10s ease;
+  animation: progress-bar-stripes 10s linear infinite;
+}
+.single-progress-txt h3 {
+  font-size:15px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #333;
+}
+@keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+#text-education{
+    font-size:30px;
+
+}
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInLeft 1s ease-out forwards;
+}
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.03);
+  transform: translateY(-10px) scale(1.02);
+
+}
+.container1{
+    display:grid;
+    grid-template-rows: 20px 20px 20px;
+}
